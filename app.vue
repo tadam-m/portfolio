@@ -1,6 +1,12 @@
+<script setup lang="ts">
+useHead({
+  title: 'Little Legends - Gen AI',
+})
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+    <UNotifications />
+  </NuxtLayout>
 </template>
