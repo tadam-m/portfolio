@@ -1,27 +1,32 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/ui": "^2.17.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
+    "globals": "^15.8.0",
     "nuxt": "^3.12.3",
     "vue": "latest"
   },
-  "overrides": {
-    "@typescript-eslint/eslint-plugin": "rc-v8"
-  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.22.2",
+    "eslint": "^9.7.0",
     "sass": "^1.77.8",
     "typescript": "^5.5.3",
     "vue-tsc": "^2.0.26"
+  },
+  "overrides": {
+    "@typescript-eslint/eslint-plugin": "rc-v8"
   }
 }

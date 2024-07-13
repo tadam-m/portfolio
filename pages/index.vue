@@ -24,20 +24,19 @@ const updatePosition = () => {
 onMounted(() => {
   requestAnimationFrame(updatePosition)
 })
-
 </script>
 
 <template>
-  <div class="ball"
-       :style="{ transform: `translate(${ballX}px, ${ballY}px)` }"
-  ></div>
+  <div
+    class="ball"
+    :style="{ transform: `translate(${ballX}px, ${ballY}px)` }"
+  />
   <div class="container">
     <p>Let start coding</p>
     <p>
       x: {{ cursorX }} y: {{ cursorY }}
     </p>
   </div>
-
 </template>
 
 <style scoped lang="scss">
